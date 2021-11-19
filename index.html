@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>♦ Git n' Github ♦</title>
+        <style>
+            body{
+                background-color: gray;
+                color: chartreuse;
+                font: normal 12pt Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>♦ Git & Github ♦</h1>
+        <h2>• Passo-a-Passo de usabilidade básica do 'Git':</h2>
+        <ol style="color:white">
+            <li>
+                No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada (utilize o comando cd para navegar entre pastas);
+            </li> <br>
+            <li>
+                Execute o comando git add index.html para marcar o arquivo para ser salvo (commitado);
+            </li> <br>
+            <li>
+                Execute git status e confira que o arquivo agora mudou de estado e está pronto para ser salvo (commitado);
+            </li> <br>
+            <li>
+                Após adicionar, execute o comando git commit -m "Criando arquivo index.html com lista de cursos". Sinta-se à vontade para alterar a mensagem de commit, se desejar;
+            </li> <br>
+            <li>
+                Altere o arquivo index.html. Adicione o acento em "Integração Continua", por exemplo;
+            </li> <br>
+            <li>
+                Adicione o arquivo para ser salvo, com 'git add';
+            </li> <br>
+            <li>
+                Execute o comando git commit -m "Acento adicionado no curso de Integração Contínua". Sinta-se à vontade para alterar a mensagem de commit, se desejar;
+            </li> <br>
+            <li>
+                Execute o comando git log e analise a sua saída. Execute também git log --oneline, git log -p e outras alternativas que quiser testar;
+            </li> <br>
+            <li>
+                Crie um arquivo vazio com o nome que quiser, por exemplo, ide-config;
+            </li> <br>
+            <li>
+                Crie o arquivo .gitignore e adicione uma linha com o nome do arquivo recém-criado (ide-config, no exemplo acima);
+            </li> <br>
+            <li>
+                Execute git status e verifique que o arquivo ide-config não está na lista para ser adicionado;
+            </li> <br>
+            <li>
+                Adicione (com git add .gitignore) e realize o commit (com git commit -m "Adicionando .gitignore") o arquivo .gitignore.
+            </li> <br>
+        </ol>
+
+    </body>
+</html>
