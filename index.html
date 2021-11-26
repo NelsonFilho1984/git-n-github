@@ -22,37 +22,108 @@
                 No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada (utilize o comando cd para navegar entre pastas);
             </li> <br>
             <li>
-                Execute o comando git add index.html para marcar o arquivo para ser salvo (commitado);
+                Execute o comando: <strong>git add index.html</strong> para marcar o arquivo para ser salvo (commitado);
             </li> <br>
             <li>
-                Execute git status e confira que o arquivo agora mudou de estado e está pronto para ser salvo (commitado);
+                Execute: <strong>git status</strong> e confira que o arquivo agora mudou de estado e está pronto para ser salvo (commitado);
             </li> <br>
             <li>
-                Após adicionar, execute o comando git commit -m "Criando arquivo index.html com lista de cursos". Sinta-se à vontade para alterar a mensagem de commit, se desejar;
+                Após adicionar, execute o comando: <strong>git commit -m "Criando 'arquivo index.html' "</strong>. <br>
+                Sinta-se à vontade para alterar a mensagem de commit, se desejar;
             </li> <br>
             <li>
                 Altere o arquivo index.html. Adicione o acento em "Integração Continua", por exemplo;
             </li> <br>
             <li>
-                Adicione o arquivo para ser salvo, com 'git add';
+                Adicione o arquivo para ser salvo, com <strong>'git add'</strong>;
             </li> <br>
             <li>
-                Execute o comando git commit -m "Acento adicionado no curso de Integração Contínua". Sinta-se à vontade para alterar a mensagem de commit, se desejar;
+                Execute o comando: <strong>git commit -m "Acento adicionado no curso de Integração Contínua"</strong>. <br>
+                Sinta-se à vontade para alterar a mensagem de commit, se desejar;
             </li> <br>
             <li>
-                Execute o comando git log e analise a sua saída. Execute também git log --oneline, git log -p e outras alternativas que quiser testar;
+                Execute o comando: <strong>git log</strong> e analise a sua saída. Execute também <strong>git log --oneline</strong>, <strong>git log -p</strong> e outras alternativas que quiser testar;
             </li> <br>
             <li>
-                Crie um arquivo vazio com o nome que quiser, por exemplo, ide-config;
+                Crie um arquivo vazio com o nome que quiser (sem extensão), por exemplo, ide-config;
             </li> <br>
             <li>
-                Crie o arquivo .gitignore e adicione uma linha com o nome do arquivo recém-criado (ide-config, no exemplo acima);
+                Crie o arquivo <strong>.gitignore</strong> e adicione uma linha com o nome do arquivo recém-criado (ide-config, no exemplo acima);
             </li> <br>
             <li>
-                Execute git status e verifique que o arquivo ide-config não está na lista para ser adicionado;
+                Execute: <strong>git status</strong> e verifique que o arquivo ide-config não está na lista para ser adicionado;
             </li> <br>
             <li>
-                Adicione (com git add .gitignore) e realize o commit (com git commit -m "Adicionando .gitignore") o arquivo .gitignore.
+                Adicione (com <strong>git add .gitignore</strong>) e realize o 'commit' (com <strong>git commit -m "Adicionando .gitignore"</strong> ) o arquivo .gitignore.
+            </li> <br>
+        </ol>
+        <h2>• Passo-a-Passo de usabilidade básica do 'Git' (Parte 2):</h2>
+        <ol style="color:white">
+            <li>
+                Crie uma pasta nova em seu computador, nomeie e.g. 'servidor';
+            </li> <br>
+            <li>
+                No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada (utilize o comando 'cd' para navegar entre pastas);
+            </li> <br>
+            <li>
+                Execute o comando: <strong>git init --bare</strong>;
+                <p>
+                    <b>OBS:</b>
+                    Não se esqueça do parâmetro --bare! <br>
+                    Caso tenha executado o comando 'init' sem esse parâmetro, execute na sequência o seguinte comando: <br>
+                    <strong>git config core.bare true.</strong>
+                </p>
+            </li> <br>
+            <li>
+                Navegue até a pasta onde se encontra o seu projeto;
+            </li> <br>
+            <li>
+                Execute o comando: <strong>git remote add {nome_do_repositório e.g. 'local'} {caminho / endereço}</strong>. <br>
+                Substitua {caminho} pelo caminho completo da pasta recém criada;
+            </li> <br>
+            <li>
+                Crie uma nova pasta em seu computador, para representar o trabalho de outra pessoa;
+            </li> <br>
+            <li>
+                No terminal (ou Git Bash, no Windows) navegue até a pasta recém criada;
+            </li> <br>
+            <li>
+                Execute o comando: <strong>git clone {caminho} projeto</strong>. <br>
+                Substitua {caminho} pelo caminho completo da pasta que criamos no primeiro passo;
+            </li> <br>
+            <li>
+                Observe que o repositório clonado está vazio;
+            </li> <br>
+            <li>
+                Acesse a pasta Projeto e execute o comando: <strong>'git remote rename origin local'</strong>. <br>
+                Para renomear o repositório local da outra pessoa de "origin" para "local", para manter uma paridade no projeto;
+            </li> <br>
+            <li>
+                Navegue até a pasta onde se encontra o seu projeto original;
+            </li> <br>
+            <li>
+                Execute o comando: <strong>git push local main</strong> (ou 'master'), para enviar as suas modificações para o seu servidor;
+            </li> <br>
+            <li>
+                Navegue até a pasta criada no passo 6 (do outro usuário);
+            </li> <br>
+            <li>
+                Execute o comando: <strong>git pull local main</strong> para baixar as modificações;
+            </li> <br>
+            <li>
+                Abra o seu navegador e acesse <strong>http://github.com/</strong>;
+            </li> <br>
+            <li>
+                Crie uma conta;
+            </li> <br>
+            <li>
+                Crie um novo repositório, clicando no símbolo de adição no canto superior direito;
+            </li> <br>
+            <li>
+                No terminal (ou Git Bash, no Windows) adicione, ao seu projeto inicial, o repositório remoto recém criado (os comandos são mostrados pelo próprio GitHub);
+            </li> <br>
+            <li>
+                Execute: <strong>git push origin main</strong> para enviar as suas alterações para o repositório no GitHub.
             </li> <br>
         </ol>
     </body>
